@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KLVRJ7XS4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0KLVRJ7XS4');
+  </script>
+
+  <title> Seong Hee Lee </title>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <link rel="canonical" href="http://localhost:4000/projects/light-remote">
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Light Remote" />
+  <meta property="og:url" content="http://localhost:4000/projects/light-remote" />
+  
+    <meta property="og:image" content="http://jonathanzong.com/images/blog/placeholder.png" />
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@ohnobackspace" />
+  <meta name="twitter:title" content="Light Remote" />
+</head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-2 col-md-8">
+          <nav id="navbar" class="meta-text">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a  href="/" title="Home">Bio</a></li>
+    
+    <li><a  href="/research" title="Research">Research</a></li>
+    <li><a href="/assets/Seonghee_CV.pdf">CV</a></li>
+    <li><a class="nav-current"  href="/projects" title="Projects">Projects</a></li>
+    <li><a  href="/blog"  title="Blog">Blog</a></li>
+  </ul>
+  <div class="clear"></nav>
+</nav>
+
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+          <style>
+p {
+  margin: 1em auto;
+}
+</style>
+
+<p>
+  <img src="/images/projects/light-remote/P1270014.jpg" />
+</p>
+
+<p>
+  <strong>Light Remote</strong> is an AR spatial interface for the direct manipulation of theatrical lighting using motion tracking.
+</p>
+
+<p>
+  When I started using the Studiolab at Princeton, I saw an opportunity in the fact that the motion capture and theatre lighting were coincidentally co-located. I created a motion tracking wearable out of capture dots and a wristband, and wrote a program in Matlab that calculates intersections between the position of the lights in the room and a 15 degree cone in the direction the wristband is pointing. Any intersections would be sent over OSC to the EOS light board, which would control the lights. Adding a wireless mouse as a peripheral enables more input dimensions like hue and brightness.
+</p>
+
+<p>
+  The motion capture Matlab script can be found in this <a href="https://gist.github.com/jonathanzong/ccff530a3daacd87d943739e533ea492" target="_blank">Github gist</a>.
+</p>
+
+<p>
+  <img src="/images/projects/light-remote/P1270017.jpg" />
+</p>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

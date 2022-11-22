@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KLVRJ7XS4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0KLVRJ7XS4');
+  </script>
+
+  <title> Seong Hee Lee </title>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <link rel="canonical" href="http://localhost:4000/projects/heartbeat">
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Heartbeat" />
+  <meta property="og:url" content="http://localhost:4000/projects/heartbeat" />
+  
+    <meta property="og:image" content="http://localhost:4000/images/projects/heartbeat.png" />
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@ohnobackspace" />
+  <meta name="twitter:title" content="Heartbeat" />
+</head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-2 col-md-8">
+          <nav id="navbar" class="meta-text">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a  href="/" title="Home">Bio</a></li>
+    
+    <li><a  href="/research" title="Research">Research</a></li>
+    <li><a href="/assets/Seonghee_CV.pdf">CV</a></li>
+    <li><a class="nav-current"  href="/projects" title="Projects">Projects</a></li>
+    <li><a  href="/blog"  title="Blog">Blog</a></li>
+  </ul>
+  <div class="clear"></nav>
+</nav>
+
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+          <style>
+.heartbeat-wrapper .iframe-wrapper {
+  background: black;
+}
+.heartbeat-wrapper .iframe-wrapper iframe{
+  display: block;
+  margin: 0 auto;
+  width: 560;
+}
+.heartbeat-wrapper h3{
+  margin-top: 0;
+}
+.heartbeat-wrapper em {
+  font-style: italic;
+}
+.heartbeat-wrapper .strikethrough {
+  text-decoration: line-through;
+}
+</style>
+
+<div class="heartbeat-wrapper">
+  <div class="iframe-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XV3Y1v8U4VQ?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <h1>Heartbeat</h1>
+  <h3>an interface for watchOS</h3>
+  <br/>
+  <p>
+    What should we call time? The current time is <em><script>document.write(new Date());</script></em>. You have had this page open for <em id="elapsed">0 seconds</em>. We overload the word "time" to refer to both <em>point</em> and <em>interval</em>. But then, we are only able to index points in time by their distance interval from a predefined epoch, an arbitrary point from which to start counting. Points are intervals fitted to a scale.
+  </p>
+
+  <p>
+    In a way, our heartbeats are our most personal connection to the movement of time&mdash;an embodied demarcation of interval by which we experience each moment. By interfacing with time as mediated by a heartbeat sensor placed at the surface of our body&mdash;itself an interface between our internal and sensory worlds&mdash;we understand time through the lens of our bodily experience.
+  </p>
+
+
+  <p>
+    <strong>Heartbeat</strong> calibrates to (what you believe to be) your resting heart rate on initialization. Then, the animated character dances to the beat of your heart; calm as you are calm, agitated as you are agitated. The watchOS time travel feature allows you to scroll back through your personal heart rate timeline, letting you understand your experiences by how you felt in the moment.
+  </p>
+
+  <p>
+    Created in Fall 2015 for VIS415 Advanced Graphic Design: Interface.
+  </p>
+</div>
+
+<script>
+var elem = document.getElementById("elapsed");
+var start = Date.now();
+setInterval(function() {
+  var elapsed = ((Date.now() - start) / 1000) | 0;
+  elem.innerHTML = elapsed + (elapsed === 1 ? " second" : " seconds");
+}, 1000);
+</script>
+
+<img hidden="true" src="/images/projects/heartbeat.png" />
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
