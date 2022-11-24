@@ -11,6 +11,7 @@
 a[href]:active{
     cursor:url(/images/cursor/cursor-active.svg) 16 16,auto;
 } */
+
 html {
     min-height: 100vh;
 }
