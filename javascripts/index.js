@@ -1,12 +1,15 @@
+
+
+
 new p5(function(p) {
   var t = 0;
   var d = 250;
 
   p.setup = function() {
     var canvas = p.createCanvas(p.windowWidth, p.windowHeight);
-    p.stroke(p.color('#318CE7'), 120);
+    p.stroke(p.color('lightblue'), 120);
     p.noFill();
-    p.frameRate(30);
+    p.frameRate(20);
   }
 
   p.draw = function() {
@@ -26,3 +29,4 @@ new p5(function(p) {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
   }
 }, document.querySelector('body'));
+

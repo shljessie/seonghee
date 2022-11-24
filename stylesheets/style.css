@@ -1,16 +1,16 @@
 @import url(bootstrap.min.css);
-*{
+/* *{
     cursor:url(/images/cursor/cursor.svg) 16 16,auto;
-}
-*:active{
+} */
+/* *:active{
     cursor:url(/images/cursor/cursor-active.svg) 16 16,auto;
-}
-a[href]:hover{
+} */
+/* a[href]:hover{
     cursor:url(/images/cursor/cursor-hover.svg) 16 16,auto;
 }
 a[href]:active{
     cursor:url(/images/cursor/cursor-active.svg) 16 16,auto;
-}
+} */
 html {
     min-height: 100vh;
 }
@@ -43,7 +43,7 @@ a:hover,a:focus{
     text-decoration:none
 }
 a:hover{
-    color:#66bb6a
+    color:plum;
 }
 a:focus{
     color:#318CE7
@@ -52,8 +52,10 @@ a.nav-current{
     color:#c3c3c3
 }
 #navbar{
+    font-family: 'Roboto Mono';
+    font-size: 15px;
     margin-bottom:2em;
-    padding-top:15px;
+    padding-top:45px;
     padding-bottom:15px
 }
 #navbar a{
@@ -61,7 +63,7 @@ a.nav-current{
     padding-bottom:0
 }
 #navbar a:hover{
-    color:#66bb6a !important
+    color:plum;
 }
 #navbar .clear{
     clear:both
